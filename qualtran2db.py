@@ -106,7 +106,8 @@ def adder_decomposed():
     bloq = Add(QUInt(2))
     circuit = get_clifford_plus_t_cirq_circuit_for_bloq(bloq)
     assert_circuit_in_clifford_plus_t(circuit)
-    print(circuit)
+
+    return circuit
 
 
 def qrom_decomposed():
@@ -217,7 +218,7 @@ def hubbard_2D_decomposed():
 
 
 if __name__ == "__main__":
-    # adder_decomposed()
+    adder_decomposed()
     # qrom_decomposed()
     # qpe_decomposed()
-    hubbard_2D_decomposed()
+    # hubbard_2D_decomposed()

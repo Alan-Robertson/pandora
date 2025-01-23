@@ -22,7 +22,9 @@ connection.set_session(autocommit=True)
 if connection:
     print("Connection to the PostgreSQL established successfully.")
 else:
-    print("Connection to the PostgreSQL encountered and error.")
+    print("Connection to the PostgreSQL encountered an error.")
+    exit()
+    
 
 
 def test_cancel_single_qubit():
